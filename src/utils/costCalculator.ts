@@ -35,6 +35,24 @@ export const calculateIngredientCost = (ingredientId: number, recipeQuantity: nu
     return pricePerMlCoffee * recipeQuantity;
   }
 
+  // Xử lý đặc biệt cho Bột kem muối (id = 9)
+  // Công thức: 1 phần bột kem muối + 2 phần sữa tươi không đường
+  // Sữa tươi không đường giá: 9000đ / 220ml
+  if (ingredientId === 9) {
+    const milkPricePerMl = 9000 / 220;
+    // Tổng chi phí cho 1g bột kem muối (bao gồm cả giá của 2ml sữa tươi)
+    const totalCostPerGramPowder = pricePerBaseUnit + (2 * milkPricePerMl);
+    
+    if (targetUnit === 'g' || targetUnit === 'ml') {
+      return totalCostPerGramPowder * recipeQuantity;
+    } else if (targetUnit === 'môi') {
+      // 1 môi = 40g kem muối thành phẩm (gồm bột + sữa)
+      // Tỷ lệ 1 bột : 2 sữa => bột chiếm 1/3 khối lượng
+      // Số gam bột trong 1 môi = 40 / 3
+      return totalCostPerGramPowder * (40 / 3) * recipeQuantity; 
+    }
+  }
+
   // Tính tiền dựa trên đơn vị của công thức cho các nguyên liệu khác
   if (targetUnit === 'g' || targetUnit === 'ml') {
     return pricePerBaseUnit * recipeQuantity;
