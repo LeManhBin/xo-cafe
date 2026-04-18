@@ -24,7 +24,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen py-8 relative">
+    <main className="min-h-screen bg-white py-8 relative">
       {/* Header Area with Logout Button */}
       <div className="w-full max-w-5xl mx-auto px-4 md:px-8 mb-4 flex justify-end">
         <button
