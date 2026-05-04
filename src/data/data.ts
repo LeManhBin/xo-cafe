@@ -4,7 +4,7 @@ export const ingredient = [
     "ingredient_name": "Cafe Robusta S18",
     "product_name": "Cafe Robusta S18",
     "unit": "kg",
-    "unit_price": 180000,
+    "unit_price": 200000,
   },
   {
     "id": 2,
@@ -84,134 +84,249 @@ export const ingredient = [
     "unit_price": 60000,
   }
 ]
-export const recipe = [
+
+export const recipes = [
   {
     "recipe_id": 101,
     "recipe_name": "Matcha Latte Oatside",
-    "ingredients": [
-      { "ingredient_id": 2, "ingredient_name": "Matcha", "quantity": 4, "unit": "g" },
-      { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 30, "unit": "ml" },
-      { "ingredient_id": 5, "ingredient_name": "Sữa Oatside", "quantity": 100, "unit": "ml" },
-      { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 10, "unit": "ml" },
-      { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
-      { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
-    ],
-    "others": [{ "name": "Nước", "quantity": 50, "unit": "ml" }]
+    "sizeM": {
+      "ingredients": [
+        { "ingredient_id": 2, "ingredient_name": "Matcha", "quantity": 4, "unit": "g" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 30, "unit": "ml" },
+        { "ingredient_id": 5, "ingredient_name": "Sữa Oatside", "quantity": 100, "unit": "ml" },
+        { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 10, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ],
+      "others": [{ "name": "Nước", "quantity": 50, "unit": "ml" }]
+    },
+    "sizeS": {
+      "ingredients": [
+        { "ingredient_id": 2, "ingredient_name": "Matcha", "quantity": 3, "unit": "g" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 20, "unit": "ml" },
+        { "ingredient_id": 5, "ingredient_name": "Sữa Oatside", "quantity": 70, "unit": "ml" },
+        { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 5, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ],
+      "others": [{ "name": "Nước", "quantity": 40, "unit": "ml" }]
+    }
   },
   {
     "recipe_id": 102,
     "recipe_name": "Matcha Latte",
-    "ingredients": [
-      { "ingredient_id": 2, "ingredient_name": "Matcha", "quantity": 4, "unit": "g" },
-      { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 30, "unit": "ml" },
-      { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 100, "unit": "ml" },
-      { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 10, "unit": "ml" },
-      { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
-      { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
-    ],
-    "others": [{ "name": "Nước", "quantity": 50, "unit": "ml" }]
+    "sizeM": {
+      "ingredients": [
+        { "ingredient_id": 2, "ingredient_name": "Matcha", "quantity": 4, "unit": "g" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 30, "unit": "ml" },
+        { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 100, "unit": "ml" },
+        { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 10, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ],
+      "others": [{ "name": "Nước", "quantity": 50, "unit": "ml" }]
+    },
+    "sizeS": {
+      "ingredients": [
+        { "ingredient_id": 2, "ingredient_name": "Matcha", "quantity": 3, "unit": "g" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 20, "unit": "ml" },
+        { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 70, "unit": "ml" },
+        { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 5, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ],
+      "others": [{ "name": "Nước", "quantity": 40, "unit": "ml" }]
+    }
   },
   {
     "recipe_id": 103,
     "recipe_name": "Matcha Latte Kem Muối",
-    "ingredients": [
-      { "ingredient_id": 2, "ingredient_name": "Matcha", "quantity": 4, "unit": "g" },
-      { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 30, "unit": "ml" },
-      { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 100, "unit": "ml" },
-      { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 10, "unit": "ml" },
-      { "ingredient_id": 9, "ingredient_name": "Bột kem muối", "quantity": 1, "unit": "môi" },
-      { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
-      { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
-    ],
-    "others": [{ "name": "Nước", "quantity": 50, "unit": "ml" }]
+    "sizeM": {
+      "ingredients": [
+        { "ingredient_id": 2, "ingredient_name": "Matcha", "quantity": 4, "unit": "g" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 30, "unit": "ml" },
+        { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 100, "unit": "ml" },
+        { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 10, "unit": "ml" },
+        { "ingredient_id": 9, "ingredient_name": "Bột kem muối", "quantity": 1, "unit": "môi" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ],
+      "others": [{ "name": "Nước", "quantity": 50, "unit": "ml" }]
+    },
+    "sizeS": {
+      "ingredients": [
+        { "ingredient_id": 2, "ingredient_name": "Matcha", "quantity": 3, "unit": "g" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 20, "unit": "ml" },
+        { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 70, "unit": "ml" },
+        { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 5, "unit": "ml" },
+        { "ingredient_id": 9, "ingredient_name": "Bột kem muối", "quantity": 0.8, "unit": "môi" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ],
+      "others": [{ "name": "Nước", "quantity": 40, "unit": "ml" }]
+    }
   },
   {
     "recipe_id": 104,
     "recipe_name": "Cafe đen",
-    "ingredients": [
-      { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 70, "unit": "ml" },
-      { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 15, "unit": "ml" },
-      { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
-      { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
-    ]
+    "sizeS": {
+      "ingredients": [
+        { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 50, "unit": "ml" },
+        { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 10, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ]
+    }
   },
   {
     "recipe_id": 105,
     "recipe_name": "Cafe Muối",
-    "ingredients": [
-      { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 40, "unit": "ml" },
-      { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 25, "unit": "ml" },
-      { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 20, "unit": "ml" },
-      { "ingredient_id": 9, "ingredient_name": "Bột kem muối", "quantity": 1, "unit": "môi" },
-      { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
-      { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
-    ]
+    "sizeM": {
+      "ingredients": [
+        { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 40, "unit": "ml" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 25, "unit": "ml" },
+        { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 20, "unit": "ml" },
+        { "ingredient_id": 9, "ingredient_name": "Bột kem muối", "quantity": 1, "unit": "môi" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ]
+    },
+    "sizeS": {
+      "ingredients": [
+        { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 35, "unit": "ml" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 20, "unit": "ml" },
+        { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 15, "unit": "ml" },
+        { "ingredient_id": 9, "ingredient_name": "Bột kem muối", "quantity": 0.8, "unit": "môi" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ]
+    }
   },
   {
     "recipe_id": 106,
     "recipe_name": "Bạc xỉu",
-    "ingredients": [
-      { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 25, "unit": "ml" },
-      { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 40, "unit": "ml" },
-      { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 45, "unit": "ml" },
-      { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
-      { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
-    ]
+    "sizeM": {
+      "ingredients": [
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 25, "unit": "ml" },
+        { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 40, "unit": "ml" },
+        { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 45, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ]
+    },
+    "sizeS": {
+      "ingredients": [
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 20, "unit": "ml" },
+        { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 30, "unit": "ml" },
+        { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 35, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ]
+    }
   },
   {
     "recipe_id": 107,
     "recipe_name": "Cafe Sữa đá",
-    "ingredients": [
-      { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 55, "unit": "ml" },
-      { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 25, "unit": "ml" },
-      { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
-      { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
-    ]
+    "sizeM": {
+      "ingredients": [
+        { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 55, "unit": "ml" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 25, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ]
+    },
+    "sizeS": {
+      "ingredients": [
+        { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 45, "unit": "ml" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 20, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ]
+    }
   },
   {
     "recipe_id": 108,
     "recipe_name": "Sữa tươi caffe",
-    "ingredients": [
-      { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 25, "unit": "ml" },
-      { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 50, "unit": "ml" },
-      { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 30, "unit": "ml" },
-      { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
-      { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
-    ]
+    "sizeM": {
+      "ingredients": [
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 25, "unit": "ml" },
+        { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 50, "unit": "ml" },
+        { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 30, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ]
+    },
+    "sizeS": {
+      "ingredients": [
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 20, "unit": "ml" },
+        { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 40, "unit": "ml" },
+        { "ingredient_id": 1, "ingredient_name": "Cafe Robusta S18", "quantity": 25, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ]
+    }
   },
   {
     "recipe_id": 109,
     "recipe_name": "Cacao Latte Oatside",
-    "ingredients": [
-      { "ingredient_id": 3, "ingredient_name": "Cacao", "quantity": 12, "unit": "g" },
-      { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 30, "unit": "ml" },
-      { "ingredient_id": 5, "ingredient_name": "Sữa Oatside", "quantity": 120, "unit": "ml" },
-      { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 10, "unit": "ml" },
-      { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
-      { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
-    ],
-    "others": [{ "name": "Nước nóng", "quantity": 40, "unit": "ml" }]
+    "sizeM": {
+      "ingredients": [
+        { "ingredient_id": 3, "ingredient_name": "Cacao", "quantity": 12, "unit": "g" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 30, "unit": "ml" },
+        { "ingredient_id": 5, "ingredient_name": "Sữa Oatside", "quantity": 120, "unit": "ml" },
+        { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 10, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ],
+      "others": [{ "name": "Nước nóng", "quantity": 40, "unit": "ml" }]
+    },
+    "sizeS": {
+      "ingredients": [
+        { "ingredient_id": 3, "ingredient_name": "Cacao", "quantity": 9, "unit": "g" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 20, "unit": "ml" },
+        { "ingredient_id": 5, "ingredient_name": "Sữa Oatside", "quantity": 80, "unit": "ml" },
+        { "ingredient_id": 7, "ingredient_name": "Syrup đường", "quantity": 5, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ],
+      "others": [{ "name": "Nước nóng", "quantity": 30, "unit": "ml" }]
+    }
   },
   {
     "recipe_id": 110,
     "recipe_name": "Cacao Sữa Lạnh",
-    "ingredients": [
-      { "ingredient_id": 3, "ingredient_name": "Cacao", "quantity": 12, "unit": "g" },
-      { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 35, "unit": "ml" },
-      { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 150, "unit": "ml" },
-      { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
-      { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
-    ],
-    "others": [{ "name": "Nước nóng", "quantity": 40, "unit": "ml" }]
+    "sizeM": {
+      "ingredients": [
+        { "ingredient_id": 3, "ingredient_name": "Cacao", "quantity": 12, "unit": "g" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 35, "unit": "ml" },
+        { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 150, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ],
+      "others": [{ "name": "Nước nóng", "quantity": 40, "unit": "ml" }]
+    },
+    "sizeS": {
+      "ingredients": [
+        { "ingredient_id": 3, "ingredient_name": "Cacao", "quantity": 9, "unit": "g" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 25, "unit": "ml" },
+        { "ingredient_id": 6, "ingredient_name": "Sữa tươi", "quantity": 100, "unit": "ml" },
+        { "ingredient_id": 10, "ingredient_name": "Đá viên", "quantity": 1, "unit": "phần" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ],
+      "others": [{ "name": "Nước nóng", "quantity": 30, "unit": "ml" }]
+    }
   },
   {
     "recipe_id": 111,
     "recipe_name": "Cacao Sữa Nóng",
-    "ingredients": [
-      { "ingredient_id": 3, "ingredient_name": "Cacao", "quantity": 12, "unit": "g" },
-      { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 35, "unit": "ml" },
-      { "ingredient_id": 6, "ingredient_name": "Sữa tươi (nóng)", "quantity": 180, "unit": "ml" },
-      { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
-    ]
+    "sizeS": {
+      "ingredients": [
+        { "ingredient_id": 3, "ingredient_name": "Cacao", "quantity": 9, "unit": "g" },
+        { "ingredient_id": 4, "ingredient_name": "Sữa đặc", "quantity": 25, "unit": "ml" },
+        { "ingredient_id": 6, "ingredient_name": "Sữa tươi (nóng)", "quantity": 150, "unit": "ml" },
+        { "ingredient_id": 11, "ingredient_name": "Bộ Ly + Ống hút + Thìa", "quantity": 1, "unit": "bộ" }
+      ],
+      "others": [{ "name": "Nước sôi hòa tan", "quantity": 90, "unit": "ml" }]
+    }
   }
 ];
